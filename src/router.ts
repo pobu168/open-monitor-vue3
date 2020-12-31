@@ -1,13 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-import test from "./views/test.vue"
+import index from "./views/index.vue"
 
 const routes = [
     {
       path: "/",
-      name: "test",
-      component: test,
-      title: "test"
+      name: "/",
+      component: async () => index
+      // redirect: '/terraformIndex/keyconfig',
     }
   ]
 
